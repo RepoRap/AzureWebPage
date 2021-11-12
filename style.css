@@ -1,0 +1,27 @@
+h1{font-family: 'Raleway', sans-serif;
+}
+
+body { font-family: 'Montserrat', sans-serif;
+    padding-top: 70px; }
+head{margin-top: 0px;}
+h2{font-family: 'Raleway', sans-serif;
+background-color:#ff9900;
+padding:30px;}
+h3{
+    font-family: 'Raleway', sans-serif;
+    color:white;
+    background-color:var(--my-var, var(--my-background,indigo));;    ;
+padding:10px;
+}
+
+img {
+    width:180px;
+    height:150px;
+}
+#inlinebuttons
+{
+    display:inline;
+}
+.dropdown{
+    position:relative;
+}
