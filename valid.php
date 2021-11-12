@@ -42,20 +42,7 @@ if(in_array('InValid',$status)){return 'Not Inserted';}
 else{
     if(in_array("MobileInserted",$status)){return 'Mobile number previously inserted';}
     else{
-$mysqli = new mysqli("localhost","phpUpdate","Admin","momsindistress");
-$stmt=$mysqli->prepare("INSERT INTO MID_1 (Name,Age,Mobile,Cond,Email) VALUES (?,?,?,?,?)");
-$stmt->bind_param("siiss",$name_db,$age_db,$mobile_db,$cond_db,$email_db);
 
-$name_db=$name;
-$age_db=intval($age);
-$mobile_db=intval($mobile);
-$cond_db=$cond;
-$email_db=$email;
-
-$stmt->execute();
-
-$stmt->close();
-$mysqli->close();
 return 'Details Inserted';
 }}}
 
